@@ -1,0 +1,25 @@
+{
+  "name": "faf-tile-server",
+  "version": "1.0.0",
+  "description": "Serve FAF tiles",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd network_data && bash ./pipeline.sh",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royhobbstn/faf-tile-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/royhobbstn/faf-tile-server/issues"
+  },
+  "homepage": "https://github.com/royhobbstn/faf-tile-server#readme",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.10.0",
+    "express": "^4.16.4"
+  }
+}

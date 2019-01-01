@@ -1,3 +1,9 @@
+.idea
+network_data/*.zip
+network_data/*.geojson
+network_data/*/*
+mbtiles/*.mbtiles
+
 # Logs
 logs
 *.log
