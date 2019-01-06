@@ -8,7 +8,7 @@ const path = require('path');
 const port = 4002;
 
 // path to the mbtiles; default is the server.js directory
-const tilesDir = __dirname + '../network_data';
+const tilesDir = __dirname + '/mbtiles';
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);

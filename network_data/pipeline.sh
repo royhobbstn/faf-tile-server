@@ -6,5 +6,5 @@ mv ./FAF3_4_ESRI/FAF3.4_NETWORK.DBF ./FAF3_4_ESRI/FAF3.4_Network.dbf
 
 ogr2ogr -f GeoJSON -t_srs crs:84 ./faf.geojson ./FAF3_4_ESRI/FAF3.4_Network.shp
 
-tippecanoe -o ../mbtiles/faf.mbtiles -zg --drop-densest-as-needed -y ID --layer=network --include=ID --include=LNAME faf.geojson
+tippecanoe -f -o ../mbtiles/faf.mbtiles -z9 -y ID --layer=network --include=ID faf.geojson
 
